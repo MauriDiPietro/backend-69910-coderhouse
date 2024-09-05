@@ -1,0 +1,18 @@
+{
+  "name": "01-nvm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": "20.x"
+  },
+  "dependencies": {
+    "express": "^3.20.1"
+  }
+}
