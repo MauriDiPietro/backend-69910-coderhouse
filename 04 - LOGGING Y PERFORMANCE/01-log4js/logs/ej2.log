@@ -1,0 +1,5 @@
+[2024-09-09T21:05:23.938] [DEBUG] default - log debug
+[2024-09-09T21:05:23.942] [INFO] default - log info
+[2024-09-09T21:05:23.942] [WARN] default - log warn
+[2024-09-09T21:05:23.942] [ERROR] default - log error
+[2024-09-09T21:05:23.942] [FATAL] default - log fatal
