@@ -1,0 +1,38 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: kubeservice
+spec: 
+  selector: 
+    app: kubeusers69910
+  ports:
+    - port: 80  
+      targetPort: 8080  
+  type: LoadBalancer 
+--- 
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kubeusers69910 
+spec: 
+  replicas: 5 
+  selector:
+    matchLabels: 
+      app: kubeusers69910
+  template:
+    metadata:
+      labels:
+        app: kubeusers69910
+    spec:
+      containers: 
+      - name: kubecontainer69910 
+        image: dipietrojm/server-mock-69910:1.0.0 
+        ports:
+          - containerPort: 8080 
+        env:
+          - name: MONGO_URI
+            value: mongodb+srv://admin:admin@cluster0.xibok.mongodb.net/coderhouse
+        imagePullPolicy: Always
+
+
+  

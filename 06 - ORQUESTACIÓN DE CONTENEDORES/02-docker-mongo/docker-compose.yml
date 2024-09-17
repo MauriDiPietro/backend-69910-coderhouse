@@ -1,0 +1,8 @@
+version: '3.9'
+services:
+  mongo-69910:
+    image: mongo:latest
+    ports:
+      - '27019:27017'
+    volumes:
+      - '/d/DOCKER-CODER:/data/db'  
