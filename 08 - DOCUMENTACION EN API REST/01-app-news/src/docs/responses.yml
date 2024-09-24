@@ -1,0 +1,76 @@
+components:
+  schema:
+    Noticias:
+      RespuestaRegistro:
+        type: object
+        properties:
+          id:
+            type: string
+            description: Id de la noticia
+          title:
+            type: string
+            description: Titulo de la noticia
+          body:
+            type: string
+            description: Cuerpo de la noticia
+          author:
+            type: string
+            description: autor de la noticia
+          image:
+            type: string
+            decription: url de la imagen de la noticia
+          date:
+            type: date
+            description: fecha de publicacion de la noticia
+        example:    
+          id: dhas89das9d9aspd05asdasdj
+          title: ¡Se viene la lluvia!
+          body: f.......................
+          author: Franco Galeano
+          image: http://sdfsdf.com/sdfsd.jpg
+          Date: 23/09/2024
+      RespuestaGetAll:
+        type: array
+        items:
+          properties:
+            id:
+              type: string
+              description: Id de la noticia
+            title:
+              type: string
+              description: Titulo de la noticia
+            body:
+              type: string
+              description: Cuerpo de la noticia
+            author:
+              type: string
+              description: autor de la noticia
+            image:
+              type: string
+              decription: url de la imagen de la noticia
+            date:      
+              type: date
+              description: fecha de publicacion de la noticia   
+          example:    
+            id: dhas89das9d9aspd05asdasdj
+            title: ¡Se viene la lluvia!
+            body: f.......................
+            author: Franco Galeano
+            image: http://sdfsdf.com/sdfsd.jpg
+            Date: 23/09/2024       
+      NotFound: 
+        type: object
+        properties:
+          msg:
+            type: string
+            description: No se encontro el id en la base de datos
+        example:
+          msg: No se encontro el id adas8d7asd87asdggjsad en la base de datos    
+      InternalServerError:
+        type: object
+        properties:
+          msg:
+            type: string
+            description: Internal Server Error
+        example:
+          msg: Internal Server Error                            
